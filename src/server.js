@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require('cors');
 const http = require('http');
 const sentry = require('raven');
 
@@ -10,6 +11,7 @@ const server = http.Server(app);
 const port = 3333;
 
 
+app.use(cors());
 app.use(express.json())
 app.use(routes)
 
