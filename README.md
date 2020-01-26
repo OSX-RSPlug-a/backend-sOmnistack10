@@ -10,8 +10,8 @@ Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
       Nodejs;
-            Express;
-            Axios;
+            -Express;
+            -Axios;
       Mongodb;
 
 
