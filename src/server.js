@@ -4,11 +4,16 @@ const cors = require('cors');
 const http = require('http');
 const sentry = require('raven');
 
-const routes = require("./routers/routes")
+const routes = require("./routers/routes");
+const { setupWebsocket } = require('./config/websocket');
+
 
 const app = express();
 const server = http.Server(app);
 const port = 3333;
+
+
+setupWebsocket(server);
 
 
 app.use(cors());
