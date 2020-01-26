@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "supervisor src/server.js"
+  },
+  "author": "Fernando",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.9",
+    "raven": "^2.6.4",
+    "supervisor": "^0.12.0"
+  }
+}
