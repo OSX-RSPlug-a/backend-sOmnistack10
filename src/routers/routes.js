@@ -13,5 +13,9 @@ routes.post('/devs', DevController.store);
 
 routes.post('/search', SearchController.index);
 
+routes.put('/devs/:id', DevController.update);
+
+routes.delete('/devs/:id', DevController.delete);
+
 
 module.exports = routes;
