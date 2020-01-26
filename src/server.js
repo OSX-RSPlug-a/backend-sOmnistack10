@@ -35,15 +35,15 @@ new Promise((_, reject) => reject(new Error('woops'))).
   }));
 
 
-mongoose.connect('mongodb://dudebugs:jzNbOPUg7tdeIM6G@cluster0-shard-00-00-vgvxr.gcp.mongodb.net:27017,cluster0-shard-00-01-vgvxr.gcp.mongodb.net:27017,cluster0-shard-00-02-vgvxr.gcp.mongodb.net:27017/s10?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', {
+mongoose.connect('mongodb://URUSER:URKEYPASSW@cluster0-shard-00-00-vgvxr.gcp.mongodb.net:27017,cluster0-shard-00-01-vgvxr.gcp.mongodb.net:27017,cluster0-shard-00-02-vgvxr.gcp.mongodb.net:27017/URDB?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 
-//app.use((req, res, next) => {
-//  next(console.error(404));
-//});
+app.use((req, res, next) => {
+  next(console.error(404));
+});
 
 
 module.exports = server
